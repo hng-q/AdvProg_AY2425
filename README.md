@@ -1,23 +1,23 @@
-# Welcome to the Advanced Programing course (INT2215).
-## Course objective
-This module helps students build a programming mindset, how to build a program from an initial idea to a complete program, as well as introduce some advanced programming techniques. 
-Students can build a complete program that interacts with the user to perform a specific task through programming techniques in high-level programming languages, e.g., C++. 
-Students are able to modularize the program into relatively independent components and be able to perform unit testing, simple program debugging.
+# Lesson 2: GuessIt:
+This is the second lesson of the Advanced Programming course with the following objectives:
+* i) Understand about the simplest game source code structure.
+* ii) Learn about the automated testing with github Actions.
 
-## What & How to do in this repository?
-This repo provides functional templates of 07 game projects using C++, including:
-* P1: Hello World
-* P2: Guess It
-* P3: Calculus
-* P4: Hang Man
-* P5: SimpleAI
-* P6: Painter
-* P7: Snake Game
+You are required to implement several functions of GuessIt game. They could be done via the instructions as follows:
 
-You are required to implement 'empty' functions to make the games run properly. 
-The completed program will be automatically tested with test cases via pull requests and Github Actions.
-
-Keep calm and enjoy coding!
-
-INT2215 Teaching Team
-
+* Step 1: Fork this repo to your own account (Ignore if you did it before)
+* Step 2: Clone the forked repo (Ignore if you did it before)
+* Step 3: Modify the "guessit.cpp" file to complete the requirement. Specifically, there are 6 functions that you have to implement namely:
+  - int generateRandomNumber();
+  - int getPlayerGuess();
+  - string getAnswer(int number, int randomNumber);
+  - bool checkSuccess(string answer)
+  - bool checkContinuePlaying()
+  - char getPlayerOpinion()
+* Step 4: Commit & push the modified file using the command: git commit -m "[Insert_your_own_message]" & git push origin master
+* Step 5: Create a pull request:
+In the tab "Pull requests", click on "New pull request"
+Set the pull request's title with the format as: [Your_student_ID]_[Your_full_name]
+Click on "Create pull request" to submit
+* Step 6: Check the automated testing workflow on your modified code using Github Actions.
+Hope you enjoy the lesson.
